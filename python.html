@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Fullstack</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Font Awesome for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- download file -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   <!-- aos link -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- First Navbar -->
+   <nav class="navbar">
+    <div class="logo-pic">
+        <img src="images/VTS_Logo_pages-to-jpg-0001-removebg-preview.png" alt="Logo">
+    </div>
+    <ul class="nav-bar">
+        <li><a href="#vts-process">VTS Process</a></li>
+        <li class="dropdown">
+            <a href="#our-trainings" class="dropdown-btn">Our Trainings</a>
+            <ul class="dropdown-menu">
+                <li><a href="#python-fullstack">Python Fullstack</a></li>
+                <li><a href="uiux.html">UI/UX Design</a></li>
+                <li><a href="#java-fullstack">Java Fullstack</a></li>
+            </ul>
+        </li>
+        <li><a href="#careers">Careers</a></li>
+    </ul>
+    <button class="menu-toggle">☰</button>
+</nav>
+
+<!-- Second Navbar -->
+<nav class="secondary-navbar">
+    
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS MODULE</a></li>
+        <li><a href="#why-learn">WHY LEARN</a></li>
+        <li><a href="#syllabus">SYLLABUS</a></li>
+        <li><a href="#careers">CAREERS</a></li>
+    </ul>
+</nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <!-- Carousel Inner (Slides) -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="images/How-to-Become-a-Python-Full-Stack-Developer.png" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption d-none d-md-block">
+            </div> 
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="images/python-fullstack.jpg" class="d-block w-100" alt="Banner 2">
+             <div class="carousel-caption d-none d-md-block">
+            </div> 
+          </div>
+    
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="images/dev.jpg" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Carousel Controls (Next/Prev) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+       <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Course</h1>
+                <p>
+                    Our Python Fullstack Development course is designed to transform you into a professional developer.
+                    Learn to build dynamic web applications, master frontend and backend technologies, and work with
+                    modern frameworks.
+                </p>
+                <p>
+                    Gain hands-on experience with real-world projects, prepare for the job market, and launch your career in tech!
+                </p>
+                <a href="syllabus.html" class="btn">Explore Syllabus</a>
+            </div>
+            <div class="about-image">
+                <img src="images/python-fullstack.jpg" alt="Python Fullstack Course">
+            </div>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+     <section id="skills">        
+        <h1>Skills You'll Learn</h1>
+        <div class="skills-container">
+            <!-- HTML -->
+            <div class="skill-card">
+                <img src="images/html.png" alt="HTML">
+                <h2>HTML</h2>
+                <p>The backbone of any website, used to create structured content and layout.</p>
+            </div>
+            <!-- CSS -->
+            <div class="skill-card">
+                <img src="images/csss.png" alt="CSS">
+                <h2>CSS</h2>
+                <p>Style your web pages with layouts, colors, animations, and transitions.</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <img src="images/javasc.png" alt="JavaScript">
+                <h2>JavaScript</h2>
+                <p>Make your websites interactive and dynamic with modern JavaScript frameworks.</p>
+            </div>
+            <!-- Python -->
+            <div class="skill-card">
+                <img src="images/python.jpeg" alt="Python">
+                <h2>Python</h2>
+                <p>The powerful backend language used for APIs, databases, and web applications.</p>
+            </div>
+            <!-- SQL -->
+            <div class="skill-card">
+                <img src="images/sq.jpg" alt="SQL">
+                <h2>SQL</h2>
+                <p>Learn to manage and query databases efficiently to store and retrieve data.</p>
+            </div>
+        </div>
+=    </section>
+
+        <!-- Header Section -->
+        <header id="why-learn">
+            <h1>Why Learn Python Fullstack?</h1>
+            <p>Discover why Python Fullstack is your gateway to a rewarding career in tech.</p>
+        </header>
+    
+        <!-- Main Content -->
+        <main>
+            <section class="content">
+                <div class="card">
+                    <h2>High Demand</h2>
+                    <p>Python Fullstack developers are highly sought after in the tech industry.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h2>Versatility</h2>
+                    <p>From web development to data science, Python offers endless possibilities.</p>
+                    <button>Explore Careers</button>
+                </div>
+                <div class="card">
+                    <h2>Easy to Learn</h2>
+                    <p>Python's simplicity makes it a great choice for beginners and professionals alike.</p>
+                    <button>Start Now</button>
+                </div>
+            </section>
+        </main>
+
+    <!-- --------syllabus section-------- -->
+    <section id="syllabus">
+        <div class="syllabus-section">
+            <h2>Full Stack Development Syllabus</h2>
+        
+            <!-- HTML Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('htmlSyllabus')">
+                    <span>Month 1: Foundations (Day 1 - Day 20)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="syllabus-content" id="htmlSyllabus">
+                    <ul>
+                        <li><strong>Day 1-3:</strong> Introduction to HTML5, Basic HTML structure, Document structure, DOCTYPE declaration</li>
+                        <li><strong>Day 4-6:</strong> HTML Elements: Paragraphs, Headings, Lists (ordered/unordered), Links, Images</li>
+                        <li><strong>Day 7-9:</strong> HTML Forms: Input types, buttons, text areas, checkboxes, and radio buttons</li>
+                        <li><strong>Day 10-12:</strong> Semantic Elements: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code></li>
+                        <li><strong>Day 13-16:</strong> Tables and Lists: <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></li>
+                        <li><strong>Day 17-20:</strong> Multimedia: Embedding audio, video, and iframes</li>
+                    </ul>
+                    <button onclick="downloadPDF('HTML Section', 'htmlSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        
+            <!-- CSS Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('cssSyllabus')">
+                    <span>Month 2: Advanced UI/UX Design (Day 21 - Day 40)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="syllabus-content" id="cssSyllabus">
+                    <ul>
+                        <li><strong>Day 21-24:</strong> </li>
+                        <li><strong>Day 25-28:</strong> Box Model: Margins, Padding, Borders, and Content</li>
+                        <li><strong>Day 29-32:</strong> CSS Layout: Display, Positioning, Flexbox</li>
+                        <li><strong>Day 33-36:</strong> CSS Grid: Introduction to CSS Grid layout</li>
+                        <li><strong>Day 37-40:</strong> Responsive Design: Media queries and breakpoints, CSS animations</li>
+                    </ul>
+                    <button onclick="downloadPDF('CSS Section', 'cssSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        
+            <!-- JavaScript Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('jsSyllabus')">
+                    <span>Month 3: JavaScript (Day 41 - Day 60)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="syllabus-content" id="jsSyllabus">
+                    <ul>
+                        <li><strong>Day 41-44:</strong> Introduction to JavaScript: Basics, variables, data types</li>
+                        <li><strong>Day 45-48:</strong> Conditional Statements, Loops</li>
+                        <li><strong>Day 49-52:</strong> Functions, JavaScript Events</li>
+                        <li><strong>Day 53-56:</strong> DOM Manipulation, Form Validation</li>
+                        <li><strong>Day 57-60:</strong> Advanced JavaScript, ES6 features</li>
+                    </ul>
+                    <button onclick="downloadPDF('JavaScript Section', 'jsSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        
+            <!-- React Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('reactSyllabus')">
+                    <span>Month 4: React.js (Day 61 - Day 80)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="syllabus-content" id="reactSyllabus">
+                    <ul>
+                        <li><strong>Day 61-64:</strong> Introduction to React.js, React components, JSX</li>
+                        <li><strong>Day 65-68:</strong> State Management, useState, useEffect hooks</li>
+                        <li><strong>Day 69-72:</strong> Handling Events in React</li>
+                        <li><strong>Day 73-76:</strong> React Router, SPA navigation</li>
+                        <li><strong>Day 77-80:</strong> Fetching Data from APIs, Building a small React project</li>
+                    </ul>
+                    <button onclick="downloadPDF('React.js Section', 'reactSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        
+            <!-- Python Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('pythonSyllabus')">
+                    <span>Month 5: Python Backend Development (Day 81 - Day 100)</span>
+                     <span class="arrow">&#9660;</span> 
+                    
+                </div>
+                <div class="syllabus-content" id="pythonSyllabus">
+                    <ul>
+                        <li><strong>Day 81-84:</strong> Introduction to Python, setup, data types</li>
+                        <li><strong>Day 85-88:</strong> Python Control Flow: if-else, loops</li>
+                        <li><strong>Day 89-92:</strong> Flask setup, routing, templates</li>
+                        <li><strong>Day 93-96:</strong> Flask and Forms, Database connectivity</li>
+                        <li><strong>Day 97-100:</strong> Introduction to Django, Models, Views, Templates</li>
+                    </ul>
+                    <button onclick="downloadPDF('Python Backend Section', 'pythonSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        
+            <!-- Full Stack Section -->
+            <div class="module">
+                <div class="module-header" onclick="toggleSyllabus('fullstackSyllabus')">
+                    <span>Month 6: Full Stack Integration and Deployment (Day 101 - Day 120)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="syllabus-content" id="fullstackSyllabus">
+                    <ul>
+                        <li><strong>Day 101-104:</strong> Frontend and Backend Integration</li>
+                        <li><strong>Day 105-108:</strong> Authentication: JWT, OAuth</li>
+                        <li><strong>Day 109-112:</strong> Backend API Development, RESTful APIs</li>
+                        <li><strong>Day 113-116:</strong> Deployment Basics: Hosting on Cloud</li>
+                        <li><strong>Day 117-120:</strong> Final Project: Building a full-stack web application</li>
+                    </ul>
+                    <button onclick="downloadPDF('Full Stack Section', 'fullstackSyllabus')">Download Syllabus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!---------careers section------------>
+    <section id="careers">
+        <h1>Careers in Python Fullstack Development</h1>
+        <div class="career-container">
+            <div class="job">
+                <h2>Fullstack Developer</h2>
+                <p>Join a tech company as a Fullstack Developer and help build amazing web applications using Python, Flask, JavaScript, and more.</p>
+            </div>
+            <div class="job">
+                <h2>Backend Developer</h2>
+                <p>Work with the backend systems, write APIs, and manage databases using Python frameworks like Django or Flask.</p>
+            </div>
+            <div class="job">
+                <h2>Frontend Developer</h2>
+                <p>Build intuitive, responsive user interfaces with HTML, CSS, and JavaScript while collaborating with backend teams.</p>
+            </div>
+                    <!-- DevOps Engineer Job -->
+            <div class="job">
+            <h2>DevOps Engineer</h2>
+            <p>Manage cloud infrastructure, CI/CD pipelines, and automate deployment processes to ensure smooth integration between systems and developers.</p>
+            </div>
+
+            <!-- Data Engineer Job -->
+            <div class="job">
+            <h2>Data Engineer</h2>
+            <p>Design and maintain scalable data pipelines, process large datasets, and ensure data availability for analysis using Python and various data engineering tools.</p>
+             </div>
+
+        </div>
+    </section>
+
+ 
+<!-- Footer Section -->
+<footer id="footer" class="footer-section">
+    <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-item">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a></p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <p>Address: 1234 Digital Street, Suite 101, Your City, Country</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-item">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+            </div>
+        </div>
+        <!-- Newsletter Subscription -->
+        <div class="footer-item">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+
+    
+    
+    <script src="scr.js"></script>
+      <!-- Bootstrap JS (necessary for carousel functionality) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
